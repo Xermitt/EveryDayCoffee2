@@ -7,13 +7,13 @@ import lombok.Data;
 import java.util.Date;
 
 @Entity
-@Table(name = "inventory")
+@Table(name = "Inventory")
 @AllArgsConstructor
 @Data
 public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
 //    @OneToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "product_id", nullable = false)

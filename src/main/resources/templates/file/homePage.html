@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.themyleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - EveryDayCoffee</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <h1>Welcome to Our Coffee Shop!</h1>
+</header>
+
+<h2>Our Products:</h2>
+<ul>
+    <!-- Вывод списка продуктов -->
+    <li th:each="product : ${products}">
+        <span th:text="${product.name}"></span> - <span th:text="${product.price}"></span> $
+    </li>
+</ul>
+
+</body>
+</html>

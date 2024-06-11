@@ -7,7 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "products")
+@Table(name = "Products")
 public class Product {
     @Id
     // эту строку тоже можно проговорить

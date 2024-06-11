@@ -5,13 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
-@Table(name = "order_items")
+@Table(name = "Order_Items")
 @AllArgsConstructor
 @Data
 public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 //тоже нужно проговорить
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "order_id", nullable = false)
